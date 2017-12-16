@@ -1,0 +1,138 @@
+.ex-rate{
+	padding: 10px;
+	color: white;
+	font-size: 18px;
+}
+@media screen and (max-width: 425px){
+	.ex-rate{
+		font-size: 10px;
+		padding-top: 20px;
+	}
+}
+@media screen and (max-width: 320px){
+	.ex-rate{
+		font-size: 9px;
+		padding: 2px;
+		padding-top: 20px
+	}
+	.signout{
+		color: black !important;
+		padding: 5px !important;
+	}
+}
+.user-drop{
+	min-width: 50px !important;
+	width: 100px !important;
+	padding: 5px;
+	padding-left: 5px important;
+	right: 0px !important;
+}
+.user-drop>li>a{
+	padding: 10px;
+}
+.header{
+	color: #fff !important;
+	text-align: center;
+}
+.ref-btn-grp{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.info-box-text{
+	font-size: 30px;
+	font-weight: bold;
+}
+.dash-tab-hd{
+	padding-bottom: 10px !important;
+}
+/*Log in*/
+.reg-box{
+	width: 600px;
+	margin: auto;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 10px;
+}
+@media screen and (max-width: 425px){
+	.reg-box{
+		width: 80%;
+	}
+
+}
+.btn-house{
+	background-color: purple;
+}
+.reg-btn{
+	width: 49.5%;
+	display: inline-block;
+	text-align: center;
+	/*border: 1px solid #ccc;*/
+	height: 50px;
+	font-size: 18px;
+	color: white;
+}
+ .reg-btn>a.active, .reg-btn>a.active:hover, .reg-btn>a.active:focus, .reg-btn>a.active:active{
+	text-decoration: none;
+	color: black;
+	background-color: white;
+}
+
+.reg-btn>a:active, .reg-btn>a:focus, .reg-btn>a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.reg-btn{
+	text-decoration: none;
+	color: black;
+}
+.reg-btn>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	color: white;
+}
+
+
+.reg-body{
+	padding: 20px;
+}
+.signup-link{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 18px;
+}
+label span{
+	color: red;
+}
+.btn-purple{
+	background-color: purple;
+	color: white;
+}
+/*Fadein Effect for Login and Register pages*/
+@keyframes fadeIn {{opacity: 0;} to {opacity: 1;}}
+@-webkit-keyframes  fadeIn {{opacity: 0;} to {opacity: 1;}}
+@-moz-keyframes fadeIn {{opacity: 0;} to {opacity: 1;}}
+
+.fade-in{
+	opacity: 0;
+	
+	-webkit-animation: fadeIn ease-in 1;
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
