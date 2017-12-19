@@ -1,427 +1,782 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  <link rel="stylesheet" type="text/css" href="dist/css/style.css">
-  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-        page. However, you can choose any other skin. Make sure you
-        apply the skin class to the body tag so the changes take effect.
-  -->
-  <link rel="stylesheet" href="dist/css/skins/skin-purple.min.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <!-- Title -->
+    <title>Etherniton | ENN Lending Platform</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="dist/img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="dist/css/mainstyle.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="dist/css/responsive.css" rel="stylesheet">
+    <!-- Cirle Progressbar -->
+    <link rel="stylesheet" type="text/css" href="dist/css/circle.css">
+    <!-- ionicon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
-<body class="hold-transition skin-purple sidebar-mini">
-<div class="wrapper">
 
-  <!-- Main Header -->
-  <header class="main-header">
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="colorlib-load"></div>
+    </div>
 
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>E</b>TH</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>ETHERNITON</b></span>
-    </a>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area animated">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Menu Area Start -->
+                <div class="col-12 col-lg-10">
+                    <div class="menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <!-- Logo -->
+                            <a style="padding-bottom: 10px;" class="navbar-brand" href="#">
+                              <img class="img-circle" src="dist/img/logo.jpg" width="50px">
+                              <span style="font-size: 23px;">Etherniton</span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <!-- Menu Area -->
+                            <div class="collapse navbar-collapse" id="ca-navbar">
+                                <ul class="navbar-nav ml-auto" id="nav">
+                                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#ico">ICO</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Whitepaper</a></li>
+                                    <li class="nav-item drp-btn" ><a class="nav-link" href="#program">Programs <i class="ion ion-chevron-down"></i></a>
+                                      <div class="drpdown-menu">
+                                        <a class="" href="#lending">Lending</a>
+                                        <a class="" href="#staking">Staking</a>
+                                        <a class="" href="#trading">Trading</a>    
+                                      </div>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contact">Register</a></li>
+                                </ul>
+                                <div class="sing-up-button d-lg-none">
+                                    <a href="#">Sign Up</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Signup btn -->
+                <div class="col-12 col-lg-2">
+                    <div class="sing-up-button d-none d-lg-block">
+                        <a href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-    <!-- Header Navbar -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <li class="ex-rate">
-            <b>1 </b><i class="fa fa-btc"></i>
-            = <i class="fa fa-usd">17450</i>
-
-          </li>
-          <li class="ex-rate">
-            <b>1 ETH</b></i>
-            = <i class="fa fa-usd">17450</i>
-          </li>
-          <li class="ex-rate">
-            <b>1 UCH</b></i>
-            = <i class="fa fa-usd">17450</i>
-          </li>
-          <li class="user user-menu ">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-user"></i>
-              Users
-            </a>
-            <ul class="dropdown-menu user-drop">
-              <!-- Menu Footer-->
-              <li class="signout">
-                <a href="">
-                    <i class="fa fa-sign-out"></i>
-                    Sign out
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        
-
-      <!-- Sidebar Menu -->
-      <ul class="sidebar-menu">
-        <li class="header">MENU</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-sun-o"></i> <span>ICO</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">ICO Information</a></li>
-            <li><a href="#">Buy UCH Token</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-money"></i> <span>Wallet</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Deposits and Withdrawals</a></li>
-            <li><a href="#">History</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><i class="fa fa-random"></i> <span>Exchange</span></a></li>
-        <li><a href="#"><i class="fa fa-refresh"></i> <span>Transaction</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-cog"></i> <span>Setting</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Security</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-users"></i> <span>Affliate</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Member</a></li>
-            <li><a href="#">Network Tree</a></li>
-            <li><a href="#">Share</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><i class="fa fa-ticket"></i> <span>Support and Ticket</span></a></li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix"  id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md " style="background-color: rgba(0,0,0,0.2);"  >
+                    <div class="wellcome-heading" >
+                        <h2>Etherniton</h2>
+                        <h4>The Communicating Cryptocurrency</h4>
+                        <h4>Monetizing the way you communicate...</h4>
+                    </div>
+                    <div class="get-start-area">
+                      <h2 class="offer">ENN Exchange Will be Launched in Feburary 12th, 2018</h2>
+                          <!-- Display the countdown timer in an element -->
+                          <p id="demo"></p>
+                          <div class="clearfixt">
+                            <div class="c100 purple" id="dy">
+                                <span id="days"></span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
       
+                            </div>
+                            <div class="c100 orange" id="hr">
+                                <span id="hours"></span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <div class="c100 green" id="min">
+                                <span id="minutes"></span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <div class="c100" id="sec">
+                                <span id="seconds"></span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+
+                          </div>
+                        <!-- Form Start -->
+                        <form action="#" method="post" class="form-inline">
+                          <div style="margin:auto;">
+                           <input type="submit" class="submit" value="Log in">
+                            <input type="submit" class="submit" value="Register">
+                          </div>
+                        </form>
+                        <!-- Form End -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <h2>Etherniton (ENN)</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="first-info">
+              Communication is an ever-changing process which has changed massively over past few decades along with technological advancement. One such change was texting, which was widely accepted along with the introduction of mobile phones. But with the introduction of smart phones unfortunately texting is no longer a thing.What is really on a roll these days is messaging . Messaging apps and various messengers, live chats , video chats etc.  are actually overtaking social media as the primary way of  online communication.This is where ETHERNITON Enters!!!<br><br>
+              
+              Highly Valued, Mass Adoption, Easy Access, Huge Ever Growing Market….
+            </p>
+        </div>
+        <!-- Special Description Area -->
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img">
+                            <img src="dist/img/bg-img/cryptocurrency.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>What is Etherniton?</h2>
+                            <p>Etherniton is an ERC20 Token which is built on ethereum blockchain through smart contract. It is pronounced as “ ether-nee-taun”. ENN uses ethereum Blockchain and is secured by ethereum network. ENN can be safely and securely transacted just like other cryptocurrencies. It have following features:</p>
+                            <ul class="point">
+                              <li>Instant Transfer Peer to Peer</li>
+                              <li>Transfer fee is negligible</li>
+                              <li>Transactions are anonymous</li>
+                              <li>Number of coins is limited</li>
+                              <li>Decentralised</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="special_description_area mt-150">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img">
+                            <img src="dist/img/bg-img/cryto.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content">
+                            <h2>Why is Etherniton?</h2>
+                          <p>Etherniton is here to resolve three major issues in communication industry :
+                                <ul class="point">
+                                  <li>Consumer need ads free platform for smooth experience.</li>
+                                  <li>Developers of such platforms need revenue source.</li>
+                                  <li>Advertisers need to promote themselves.</li>
+                                </ul><br>
+                                Etherniton is here with a solution. It’s unique marketing platform (UMP) is strategically designed by experienced team members and will get rid of all those annoying pop ups meanwhile giving deserved rewards to all ...Consumers, Developers & Advertisers.
+                              </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text -->
+                    <div class="section-heading ">
+                        <h2 class="text-center" >How it Works?</h2>
+                        <div class="line-shape"></div>
+                        <p class="about-note">
+                          We all know that anything gains value  due to mass acceptance and this is how fiat currencies came into existence overtime from barter system in the first place. Today mother of all cryptocurrencies BITCOIN is so highly valued because of its worldwide acceptance.<br><br>
+                          Etherniton team keeping this fact in mind  found a way  to get into the day to day life of masses meanwhile giving them a handsome opportunity to earn from something that they never realised could be an earning source.Communication via chatting, messaging, video conferencing on any platform will help you earn.<br><br>
+                          So the question is how ENN works? Etherniton team has invented  a Unique Marketing Platform (UMP) . UMP interacts with various apps,messengers and service providers through its API. It will collect the data (data collected depends upon permissions granted to the apps at the time of installation) from the apps of users who will be communicating and in return UMP will pay both app developers and the users involved in conversation as per UMP parameters. These payments made will be in the form of ENN. This is how remaining coins after ICO will be distributed amongst our growing community overtime. These coins then can be either cashed out from listed exchanges or can be reinvested on ENN Lending & Staking Platform.<br><br>
+                          ICO investors can reap the benefits of lending and staking platform from the beginning meanwhile waiting for ENN value appreciation through growing community and our te ups with various social media platforms and merchants.<br><br><br>
+                          The data collected will be used by ENN’s sole discretion for the Advertisers platform that will be coming up in 2019..
+
+                        </p>
+                    </div>
+                </div>
+    </section>
+    <!-- ***** Special Area End ***** -->
+
+    <!-- ***** Awesome Features Start ***** -->
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="ico">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text -->
+                    <div class="section-heading ">
+                        <h2 class="text-center" >ENN Intial Coin Offering - ICO</h2>
+                        <div class="line-shape"></div>
+                        <p class="about-note">
+                          Any Cryptocurrency needs support of the community to build and grow and same goes for the Etherniton. Etherniton needs a community that support it financially as well as for its interaction in day to day transactions.<br><br>
+                          Via ICO , Etherniton is looking to raise funds through potential investors who will contribute financially in building various platforms and projects for growth and success of Etherniton meanwhile giving investors an opportunity to multiply their investment exponentially in a short period of time. 
+                        </p>
+                        <div style="margin: auto; max-width: 500px;">
+                        <table class="responsive-table table ">
+                          <tr>
+                            <td class="tab1-item" style="color: #884bdf;">Maximum Supply</td>
+                            <td class="tab1-item" style="color: #fb397d;">18,000,000 ENN</td>
+                          </tr>
+                          <tr>
+                            <td class="tab1-item"  style="color: #884bdf;">ICO Crowdsale</td>
+                            <td class="tab1-item" style="color: #fb397d;">9,000,000 ENN (including Hard Cap*)</td>
+                          </tr>
+                          <tr>
+                            <td class="tab1-item"  style="color: #884bdf;">ICO Crowdsale Referral Bonus (10%) </td>
+                            <td class="tab1-item" style="color: #fb397d;">900,000 ENN</td>
+                          </tr>
+                          <tr>
+                            <td class="tab1-item"  style="color: #884bdf;">Total ENN Reserved For ICO</td>
+                            <td class="tab1-item" style="color: #fb397d;">10,000,000 ENN</td>
+                          </tr>                                         
+                        </table>
+                        <table class="responsive-table table ptab">
+                          <thead>
+                            <tr>
+                              <th>Phases</th>
+                              <th>1 ENN/USD</th>
+                              <th>ENN Available</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Pre Sale</th>
+                              <td>0.75 USD</td>
+                              <td>1,000,000 ENN</td>
+                            </tr>
+                            <tr>
+                              <th>Phase 1</th>
+                              <td>0.90 USD</td>
+                              <td>2,000,000 ENN</td>
+                            </tr>
+                            <tr>
+                              <th>Phase 2</th>
+                              <td>0.95 USD</td>
+                              <td>2,000,000 ENN</td>
+                            </tr>
+                            <tr>
+                              <th>Phase 3</th>
+                              <td>1.0 USD</td>
+                              <td>3,000,000 ENN</td>
+                            </tr>
+                            <tr>
+                              <th>Phase 4 (Hard Cap*)</th>
+                              <td>1.10 USD</td>
+                              <td>1,000,000 ENN</td>
+                            </tr>
+                          </tbody>
+                          
+                        </table>
+                      </div>
+                      <p class="tabNotes">
+                        * HARD CAP : In case all phases up till phase 3 completely sell off and Etherniton will get more requests for extending ICO then Phase 4 will be launched with the coins reserved for bounty programs, rewards and other bonuses.
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; margin-bottom: 40px;">
+              <h3 class="text-center">How To Participate In ICO Crowdsale ?</h3>
+              <div class="line-shape"></div>
+            </div>         
+            <div class="row">
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ion ion-log-in" aria-hidden="true"></i>
+                        <h5>Register/Sign Up</h5>
+                        <p>Register through <a href="">www.etherniton.com</a> or your sponsor’s affiliate link.</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ion ion-social-bitcoin" aria-hidden="true"></i>
+                        <h5>Deposit Bitcoin(BTC) or Ethereum(ETH)</h5>
+                        <p>Deposit Bitcoin and/or Ethereum into the provided respective addresses.Make sure you select the address correctly as no refunds will be made for wrong deposits.</p>
+                        
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ion ion-cash" aria-hidden="true"></i>
+                        <h5>Buy</h5>
+                        <p>Keep an eye on timer and buy ENN with deposits made when ICO Starts.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- ***** Awesome Features End ***** -->
+
+    <!-- ***** Cool Facts Area Start ***** -->
+    <section class="program clearfix" id="program">
+        <div class="container">
+            <div class="row">
+                <h1 class="program-heading">Programs  at Etherniton</h1>
+                <div class="line-shape"></div>
+                <p class="program-note">Etherniton gives it’s investors a chance to earn in following three ways apart from coin appreciation in future:</p><br><br>
+            </div>
+               <div class="row">
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="fa ion-ios-people" aria-hidden="true"></i>
+                        <h3>Lending</h3>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                        <h3>Stacking</h3>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-cash" aria-hidden="true"></i>
+                        <h3>Trading</h3>
+                    </div>
+                </div>
+              </div>
+          
+
+            <div class="row">
+                    <div class="col-lg-6">
+                        <div class="special_description_img">
+                            <img src="dist/img/bg-img/bit_mine.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                        <div class="special_description_content"">
+                            <h2 style="color: #eee;">Why Lending Program & Staking?</h2>
+                          <p  style="color: white";>Etherniton marketing team observed that this year hundreds of ICO’s surfaced . Most of them scammed out ,  yet they were able to draw attention and participation of people. All those ICO’s have one thing in common i.e. Lending Program . So we wrapped our heads around it and worked out our own HFTB (High Frequency Trading Bot) to see whether we can gain results as claimed in various lending program. We found that it’s not entirely possible as trading results in losses also. But we have very carefully calculated the amounts of profit described in lending program. In case whenever HFTB will suffer loss in trade we’ll recover that from company revenue and make sure our Lending Partners don’t suffer. <br><br>  
+                          The other main reason for introduction of  Lending & Staking Platforms is to prevent initial dumping of ENN on exchanges and give it a chance to breathe and succeed and enough time so that we can actually work on our projects for future development. If people will hold ENN and won’t dump the coin  right after launch the whole ENN Community  will be benefitted.<br><br> 
+                          We’ll give staking rewards to appreciate your patience and staking. And trading  profits to our Lending partners 
+                              </p>
+                        </div>
+                    </div>
+              </div>
+        </div>
     </section>
 
-    <!-- Main content -->
-    <section class="content">
-      <div class="ref-btn-grp">
-      <div class="input-group">
-        <div class="input-group-btn">
-          <button onclick="copyFunc()" type="button" class="btn btn-danger">Copy</button>
-        </div>
-        <!-- /btn-group -->
-        <input type="text" id="copyref" class="form-control">
-      </div>
-      <p>Get you referral code to invite new members.<a> Read more on Affliates benefit</a></p> 
-    </div>
 
-    <hr>
-        <h2 class="text-center">Fund Balance</h2>
-    <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="fa fa-btc"></i></span>
+    <!-- ***** Pricing Plane Area Start *****==== -->
+    <section class="pricing-plane-area section_padding_100_70 clearfix" id="lending">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>ENN Lending Program</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-container">
+              ENN Tokens can be invested in the Etherniton lending platform exclusively from the Etherniton Dashboard. This investment option involves profiting from Etherniton ATS (Automated Trading System) with the help of HFTB (High Frequency Trading Bot) and unique volatility software . HFTB will calculate the daily profit based on your investment option. Upon investment term completion, you will receive your CAPITAL BACK to take out from the Etherniton lending platform or optionally reinvest back in lending platform to continue receiving daily profit. Etherniton Lending Platform is genuine and provide lenders with the flexibility of opting out at any given time.Yes you can WITHDRAW CAPITAL at any moment of time before your term completion. Capital will be released within 24 hours timeframe after deducting the total interest accrued.
+            </p>
 
-            <div class="info-box-content">
-              <span class="info-box-text">BTC</span>
-              <span class="info-box-number">1,410</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="fa fa-flag-o"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">UCH</span>
-              <span class="info-box-number">410</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="info-box">
-            <span class="info-box-icon bg-gray"><i class="fa fa-files-o"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">ETH</span>
-              <span class="info-box-number">13,648</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="info-box">
-            <span class="info-box-icon bg-black"><i class="fa fa-usd"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">USD</span>
-              <span class="info-box-number">93,139</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-      </div>
-        <hr>
-        <h2 class="text-center">Transactions</h2>
-        <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
-
-              <p>Total Earnings</p>
-            </div>
-            <div class="icon">
-              <i class="fa fa-usd"></i>
-            </div>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53</h3>
-
-              <p>Total Earnings</p>
-            </div>
-            <div class="icon">
-              <i class="fa fa-usd"></i>
-            </div>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-md-4 col-sm-4 col-xs-12">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>Total Lending</p>
-            </div>
-            <div class="icon">
-              <i class="fa fa-usd"></i>
-            </div>
-          </div>
-        </div>
-        <!-- ./col -->
-      </div>
-      <!-- /.row -->
-      <hr>
-        <h2 class="text-center">Record Sheets</h2>
-      <div class="row">
-      <div class="col-md-6">
-      <div class="box ">
-            <div class="box-header">
-              <h2 class="box-title"><b>
-                <i class="fa fa-calendar"></i>
-                Balance Systems</b></h2>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table">
-                <tr>
-                  <th>Date</th>
-                  <th>Progress</th>
+            <table class="responsive-table table progtab">
+                <thead>
+                  <tr>
+                    <th>Lending Amount*</th>
+                    <th>Interest (Accrued Daily)**</th>
+                    <th>Capital Return</th>
                   </tr>
-                <tr>
-                  <td>2017/12/8</td>
-                  <td><span class="badge bg-red">55%</span></td>
-                </tr>
-                <tr>
-                  <td>2017/11/2</td>
-                  <td><span class="badge bg-yellow">70%</span></td>
-                </tr>
-                <tr>
-                  <td>2017/10/2</td>
-                  <td><span class="badge bg-light-blue">30%</span></td>
-                </tr>
-                <tr>
-                  <td>2017/9/6</td>
-                  <td><span class="badge bg-green">90%</span></td>
-                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>$10-$10</td>
+                    <td>HFTB Interest (up to 40% mo.)</td>
+                    <td>240 days</td>
+                  </tr>
+                  <tr>
+                    <td>$120-$510</td>
+                    <td>HFTB Interest (up to 40% mo.)</td>
+                    <td>120 days</td>
+                  </tr>
+                  <tr>
+                    <td>$520 - $2010</td>
+                    <td>HFTB Interest (up to 40% mo.) + 0.05% daily</td>
+                    <td>120 daily</td>
+                  </tr>
+                  <tr>
+                    <td>$2020 -$5010</td>
+                    <td>HFTB Interest (up to 40% mo.) + 0.15% daily</td>
+                    <td>120 daily</td>
+                  </tr>
+                  <tr>
+                    <td>$5020 - $10010</td>
+                    <td>HFTB Interest (up to 40% mo.) + 0.25% daily</td>
+                    <td>120 days</td>
+                  </tr>
+                  <tr>
+                    <td>$10020 - $100000</td>
+                    <td>HFTB Interest (up to 40% mo.) + 0.35% daily</td>
+                    <td>120 days</td>
+                  </tr>
+                </tbody>
+                
               </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+              <div class="text-container text-center">
+                  <i style="color: #fb397d;">* Lending Amount : The minimum lending amount to reinvest is $10 and in multiples of 10.<br>
+                    ** Daily payout: The actual percentage is variable as/ HFTB & crypto market fluctuations </i>
+              </div>
+              <br>
+              <br>
+              <h2 class="lend-feature text-container text-center">How to Lend?</h2>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Deposit Bitcoin(BTC) or Ethereum(ETH)</h5>
+                        <p>Deposit Bitcoin and/or Ethereum into the provided respective addresses.Make sure you select the address correctly as no refunds will be made for wrong deposits.</p>
+                    </div>
+                </div>
+                
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Get Etherniton(ENN) Tokens</h5>
+                        <p>Purchase ENN with Bitcoin or Ethereum.</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Lend Etherniton(ENN) Tokens</h5>
+                        <p>Lend ENN to our trading bot-HFTB on ENN Dashboard</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4" >
+                    <div class="single-feature prog" >
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Earn Profit Daily</h5>
+                        <p>Get paid daily by HFTB.</p>
+                    </div>
+                </div>
+                
+          
+              </div>
+              
+         
         </div>
-
-        <div class="col-md-6">
-      <div class="box ">
-            <div class="box-header dash-tab-hd">
-              <h2 class="box-title"><b>
-                <i class="fa fa-calendar"></i>
-                History Lending</b></h2>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <table class="table">
-                <tr>
-                  
-                  <th>Date</th>
-                  <th>Package Lending</th>
-                  <th style="width: 40px">Amount</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                  <td>
-                    1
-                  </td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                   <td>1</td>
-                  <td>
-                    1
-                  </td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    1
-                  </td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    1
-                  </td>
-                  <td>1</td>
-                </tr>
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-      </div>
-      <!-- /row -->
     </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+    <!-- ***** Pricing Plane Area End ***** -->
 
-  <!-- Main Footer -->
-<!--   <footer class="main-footer">
-    <!-- To the right -->
-    <!-- <div class="pull-right hidden-xs">
-      Anything you want
-    </div>
-    Default to the left
-    <strong>Copyright &copy; 2016 <a href="#">Inventomotive</a>.</strong> All rights reserved.
-  </footer>
- --> 
-<!-- ./wrapper -->
+    <!-- ***** Client Feedback Area Start ***** -->
+    <section class="clients-feedback-area bg-white section_padding_100 clearfix" id="staking">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>ENN Stacking Program</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-container">
+              Your Etherniton Coin will create wealth for you by generating profit monthly. All you need to do is to store it in your ENN Web Wallet . You’ll get monthly returns for simply holding Etherniton and icing on the cake will be the appreciating value of those Ethernitons overtime. Depending on your coin balance , a return of up to 12% annually is paid out as Staking Reward (STR). 
+            </p>
 
-<!-- REQUIRED JS SCRIPTS -->
+            <table class="responsive-table table progtab">
+                <thead>
+                  <tr>
+                    <th>Stacking Amount</th>
+                    <th>Stacking Reward (STR)</th>
+                    <th>Eligiblity for STR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Any Amount Eligible</td>
+                    <td>STR (upto 1% per mo.)</td>
+                    <td>Minimum 20 days</td>
+                  </tr>
+                </tbody>
+                
+              </table>
+              <div class="text-container text-center">
+                  <i style="color: #fb397d;">* STR Percentage : The actual percentage is variable as/no. of people actively staking at any given time and how much any given person is staking.</i>
+              </div>
+              <br>
+              <br>
+              <h2 class="lend-feature text-container text-center">How To Stake ?</h2>
+              <div class="row">
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4" >
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Open Web Wallet Account</h5>
+                        <p>For staking ENN you need to have an account in Etherniton Web Wallet.</p>
+                    </div>
+                </div>
+                
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Deposit Etherniton(ENN) </h5>
+                        <p>Deposit ENN in your Web Wallet Account.</p>
+                    </div>
+                </div>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Stake Etherniton(ENN) </h5>
+                        <p>Stake ENN to the provided staking address.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature prog">
+                        <i class="ion ion-checkmark-circled" aria-hidden="true"></i>
+                        <h5>Earn Profit Monthly </h5>
+                        <p>Get paid monthly by staking.</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- ***** Staking Section End ***** -->
 
-<!-- jQuery 2.2.3 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
-<!-- Custom Script -->
-<script src="dist/js/script.js"></script>
+    <!-- ***** Trading Section Start *****==== -->
+    <section class="pricing-plane-area section_padding_100_70 clearfix" id="trading">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text  -->
+                    <div class="section-heading text-center">
+                        <h2>ENN Trading Program</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-container">
+              You can also earn profit by buying and selling ENN coins at different price points. You can trade ENN coin through the Internal or External exchange and make profit by buying ENN at a lower price and selling them at a higher price. A downward movement in the ENN coin price can also be used to generate profit, sell your ENN coin at a higher price and buy them again at a lower price to profit from the price difference. Buy ENN and start profiting from trading.
+            </p>
+              <br>
+              <br>
+              <h2 class="lend-feature text-container text-center">How To Trade?</h2>
+              <p class="text-container text-center">
+                Extended guide will be shared after launch.
+              </p>
+              </div>         
+        </div>
+    </section>
+     <!-- ***** Trading Section End ***** -->
 
-<!-- Optionally, you can add Slimscroll and FastClick plugins.
-     Both of these plugins are recommended to enhance the
-     user experience. Slimscroll is required when using the
-     fixed layout. -->
+
+    <!-- ***** Contact Us Area Start ***** -->
+    <section class="footer-contact-area cta section_padding_100 clearfix" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Heading Text  -->
+                    <div class="section-heading">
+                        <h2 style="color: white;">Get in touch with us!</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                    <div class="footer-text">
+                        <p style="color: white;">Reach out to us now. Send in your questions for better clarity.</p>
+                    </div>
+                    <!-- <div class="address-text">
+                        <p><span>Address:</span> 40 Baria Sreet 133/2 NewYork City, US</p>
+                    </div> -->
+                    <div class="phone-text">
+                        <p  style="color: white;"><span>Phone:</span> +11-225-888-888-66</p>
+                    </div>
+                    <div class="email-text">
+                        <p  style="color: white;"><span>Email:</span> info@etherniton.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Form Start-->
+                    <div class="contact_from">
+                        <form action="#" method="post">
+                            <!-- Message Input Area Start -->
+                            <div class="contact_input_area">
+                                <div class="row">
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail" required>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Single Input Area Start -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn submit-btn">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Input Area End -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-social-icon text-center section_padding_70 clearfix">
+        <!-- footer logo -->
+        <div class="footer-text">
+            <h2>Ca.</h2>
+        </div>
+        <!-- social icon-->
+        <div class="footer-social-icon">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="active fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Foooter Text-->
+        <div class="copyright-text">
+            <p>Copyright ©2017 Etherniton. Designed by <a href="" target="_blank">Inventomotive</a></p>
+        </div>
+    </footer>
+    <!-- ***** Footer Area Start ***** -->
+
+    <!-- Jquery-2.2.4 JS -->
+    <script src="dist/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="dist/js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="dist/js/plugins.js"></script>
+    <!-- Slick Slider Js-->
+    <script src="dist/js/slick.min.js"></script>
+    <!-- Footer Reveal JS -->
+    <script src="dist/js/footer-reveal.min.js"></script>
+    <!-- Active JS -->
+    <script src="dist/js/active.js"></script>
+    <!-- Counter JS -->
+    <script src="dist/jquery.countdown-2.2.0/jquery.countdown.js"></script>
+    <script src="dist/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
+
+
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 12, 2018 15:37:25").getTime();
+        var setDate = new Date("Nov 12, 2017 12:00:00").getTime();
+
+        // Total time taken
+        var tDistance = countDownDate - setDate;
+        // Total days, hours, minutes and seconds
+        var tDays = Math.floor(tDistance/(1000 * 60 * 60 *24));
+        var tHours = Math.floor((tDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var tMinutes = Math.floor((tDistance % (1000 * 60 * 60)) / (1000 * 60));
+        var tSeconds = Math.floor((tDistance % (1000 * 60)) / 1000);
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = "<span>"+ days + " days</span> " + "<span>"+  hours + "hrs </span> " + "<span>"+ minutes + "mins </span>" + "<span>"+ seconds + "secs </span> ";
+
+          document.getElementById("days").innerHTML = days +" Dys";
+          document.getElementById("hours").innerHTML = hours +" Hrs";
+          document.getElementById("minutes").innerHTML = minutes + " Mins";
+          document.getElementById("seconds").innerHTML = seconds + " Secs";
+
+          // Automating the circle progress loader
+          dy = Math.floor((days/tDays) * 100);
+          // console.log(dy);
+          hr = Math.floor((hours/24)*100);
+          min = Math.floor((minutes/60) * 100);
+          sec = Math.floor((seconds/60) * 100);
+          
+          
+          document.getElementById("dy").className ="c100 purple";
+          document.getElementById("dy").classList.add("p"+ dy);
+          document.getElementById("hr").className = "c100 orange";
+          document.getElementById("hr").classList.add("p"+hr);
+          document.getElementById("min").className = "c100 green";
+          document.getElementById("min").classList.add("p"+min);
+          document.getElementById("sec").className ="c100";
+          document.getElementById("sec").classList.add("p"+sec);
+
+          // If the count down is finished, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
 </body>
+
 </html>
