@@ -136,3 +136,73 @@ label span{
 	-moz-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 }
+/*Ico_info page*/
+.sm-box{
+	background-color: white;
+	min-height: 50px;
+	margin: 20px;
+	font-size: 18px;
+	padding-top: 10px;
+	text-align: center;
+
+}
+.sm-box span{
+	color: purple;
+	font-weight: bold;
+	padding-left: 3px;
+}
+.card-box{
+	width: 95%;
+	padding: 10px;
+	background-color: white;
+	margin: auto;
+	border-radius: 7px;
+}
+/*dep_wid*/
+a.btn{
+	background-color: #ddd;
+	color: purple;
+}
+
+.table-responsive{	
+	min-width: 500px;
+}
+a.btn:hover{
+	background-color: purple;
+	color: white;
+}
+.tab{
+	min-width: 200px;
+	overflow-x: scroll !important;
+}
+.dep>tbody>tr>td{
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+} 
+/*History*/
+.select-menu{
+	padding: 20px;	
+}
+.his{
+	width: 200px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+/*Transaction.html*/
+.display-box{
+	background-color: white;
+	margin-bottom: 20px;
+	padding: 10px;
+	display: table;
+	content: "";
+}
+.trans-display{
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 5px;
+}
+.display-box.row{
+	margin-right: 0px;
+	margin-right: 0px;
+}

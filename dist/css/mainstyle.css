@@ -424,7 +424,7 @@ p {
 -------------------------- */
 
 .wellcome_area {
-    background-image: url(../img/bg-img/coin.jpg);
+    background-image: url(../img/bg-img/c4.gif);
     height: 900px;
     position: relative;
     z-index: 1;
@@ -432,7 +432,23 @@ p {
     background-size: cover;
 
 }
-
+/*video{ 
+  position: absolute;
+  top: 0;
+  left: 0;
+/*  right: 0;
+  bottom: 0;*/
+ /* width:auto;
+  max-width: 100%;
+  height: auto;*/
+  /*width: auto;
+  height: auto;*/
+  /*z-index: 1;*/*/
+/*  transform: translate(-50%, -50%);*/
+/*}*/
+.wellcome_area_info{
+    z-index: 10;
+}
 .wellcome_area:after {
     position: absolute;
     width: 100%;

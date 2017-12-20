@@ -32,26 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
+
 <body class="hold-transition skin-purple sidebar-mini">
 <div class="wrapper">
 
@@ -144,7 +125,18 @@ desired effect
             <li><a href="#">History</a></li>
           </ul>
         </li>
-        <li><a href="#"><i class="fa fa-random"></i> <span>Exchange</span></a></li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-random"></i> <span>Exchange</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Exchange</a></li>
+            <li><a href="#">My Open Orders</a></li>
+            <li><a href="#">My Trade History</a></li>
+          </ul>
+        </li>
         <li><a href="#"><i class="fa fa-refresh"></i> <span>Transaction</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-cog"></i> <span>Setting</span>
@@ -180,7 +172,9 @@ desired effect
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      
+        <div>
+            Total ENN Token
+        </div>
     </section>
 
     <!-- Main content -->
