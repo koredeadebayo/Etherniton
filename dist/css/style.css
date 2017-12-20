@@ -206,3 +206,43 @@ a.btn:hover{
 	margin-right: 0px;
 	margin-right: 0px;
 }
+/*Profile page*/
+.profile-form{
+	padding-top: 20px;
+	max-width: 700px; 
+}
+/*Security*/
+.security-box{
+	padding: 20px;
+}
+.security-box h3{
+	display: inline-block;
+}
+/*.security-box b{
+	background-color: green;
+	color: white;
+}
+*/
+/*Member*/
+.mem{
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+	margin: 10px;
+}
+.mem-btn{
+	border-radius: 10px;
+	border: 1px solid green;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: green;
+	color: white;
+	margin: 10px;
+}
+.mem-btn:hover, .mem-btn:active, .mem-btn:focus{
+	background-color: #55763c;
+	outline: none;
+}
+/*Support Ticket*/
