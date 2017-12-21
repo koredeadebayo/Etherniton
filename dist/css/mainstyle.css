@@ -233,7 +233,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 48px;
     margin: 0;
 }
@@ -398,7 +398,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #884bdf;
+    background-color: #2d9aa5;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -579,7 +579,7 @@ p {
 
 .single-special > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .single-icon {
@@ -588,7 +588,7 @@ p {
 
 .single-special > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
     margin-bottom: 15px;
 }
 
@@ -603,7 +603,7 @@ p {
 }
 
 .special_description_content > h2 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -707,7 +707,7 @@ p {
 
 .single-feature > h5 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .single-feature > p {
@@ -887,7 +887,7 @@ p {
 }
 
 .single-price-plan .package-plan > h5 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 18px;
 }
 
@@ -948,7 +948,7 @@ p {
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 22px;
     margin-top: 5px;
 }
@@ -1092,7 +1092,7 @@ p {
 }
 
 .get-started-button > a:hover {
-    background: #5b32b4;
+    background: #2d9aa5;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1120,7 +1120,7 @@ p {
 
 .member-text > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .member-text > p {
@@ -1197,7 +1197,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .footer-contact-area .line-shape {
@@ -1238,7 +1238,7 @@ p {
 }
 
 .btn.submit-btn:hover {
-    background: #5b32b4;
+    background: #2d9aa5;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1258,7 +1258,7 @@ p {
 -------------------------- */
 
 .footer-text > h2 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 72px;
     font-weight: 700;
 }
@@ -1380,7 +1380,7 @@ ul.point{
     font-weight: bold;
 }
 .ptab thead, .ptab th{
-    background-color: #884bdf;
+    background-color: #2d9aa5;
     color: #eee;
 }
 .ptab td{
@@ -1395,29 +1395,32 @@ ul.point{
 /*Section-Program*/
 .program{
     width: 100%;
-    background: url(../img/purple-bg.jpg) no-repeat center center fixed; 
+    background-color: #ddd; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: black;
 }
 .program-heading{
-    color: white;
+    padding-top: 20px;
+    color: black;
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 0px;
     font-weight: bold;
 }
 .program-note{
     width: 100%;
     margin-top: 30px;
-    color: #eee;
-    font-size: 20px;
+    color: black;
+    font-size: 25px;
     padding-left: 20px;
 }
 .single-feature.prog h3 {
-    color: #eee;
+    color: black;
+    text-transform: capitalize;
     /*font-size: 20px;*/
 }
 .text-container{
@@ -1431,7 +1434,7 @@ ul.point{
     border-radius: 10px;
 }
 .progtab th{
-    background-color: #884bdf;
+    background-color: #2d9aa5;
     color: white;
     vertical-align: text-top;
 }
@@ -1441,7 +1444,7 @@ ul.point{
 .lend-feature {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #884bdf;
+    color: #2d9aa5;
 }
 .drpdown-menu{
     display: none;
@@ -1465,7 +1468,7 @@ ul.point{
 }
 .cta{
     width: 100%;
-    background: url(../img/purple-bg.jpg) no-repeat center center fixed; 
+    background: #ddd; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1474,4 +1477,39 @@ ul.point{
 
 .phone-text>p>span, .email-text>p>span{
     color: #fb397d;
+}
+
+.nav-btn{
+    border-color: white !important;
+}
+.special_description_area{
+    background-color: #ddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 768px;){
+    .special_description_img{
+        padding-top: 10px;
+    }
+}
+p{
+    font-size: 20px;
+}
+h2, h1, h3 {
+    text-transform: uppercase;
+}
+.section-heading{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ul.point li{
+    font-size: 18px !important;
+}
+.special_description_img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.table_ex{
+
 }

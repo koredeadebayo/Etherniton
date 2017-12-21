@@ -233,7 +233,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 48px;
     margin: 0;
 }
@@ -398,7 +398,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #884bdf;
+    background-color: #2d9aa5;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -552,7 +552,7 @@ p {
 
 .single-special > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .single-icon {
@@ -561,7 +561,7 @@ p {
 
 .single-special > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
     margin-bottom: 15px;
 }
 
@@ -576,7 +576,7 @@ p {
 }
 
 .special_description_content > h2 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -680,7 +680,7 @@ p {
 
 .single-feature > h5 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .single-feature > p {
@@ -860,7 +860,7 @@ p {
 }
 
 .single-price-plan .package-plan > h5 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 18px;
 }
 
@@ -921,7 +921,7 @@ p {
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 22px;
     margin-top: 5px;
 }
@@ -1065,7 +1065,7 @@ p {
 }
 
 .get-started-button > a:hover {
-    background: #5b32b4;
+    background: #2d9aa5;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1093,7 +1093,7 @@ p {
 
 .member-text > h4 {
     font-size: 22px;
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .member-text > p {
@@ -1170,7 +1170,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-    color: #5b32b4;
+    color: #2d9aa5;
 }
 
 .footer-contact-area .line-shape {
@@ -1211,7 +1211,7 @@ p {
 }
 
 .btn.submit-btn:hover {
-    background: #5b32b4;
+    background: #2d9aa5;
     color: #fff;
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1231,7 +1231,7 @@ p {
 -------------------------- */
 
 .footer-text > h2 {
-    color: #5b32b4;
+    color: #2d9aa5;
     font-size: 72px;
     font-weight: 700;
 }
@@ -1294,3 +1294,9 @@ p {
 .copyright-text > p {
     margin-bottom: 0;
 }
+
+.img-circle{
+    border-radius: 25px !important;
+}
+
+/*#2d9aa5*/
