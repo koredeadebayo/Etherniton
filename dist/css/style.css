@@ -160,16 +160,17 @@ label span{
 }
 /*dep_wid*/
 a.btn{
-	background-color: #ddd;
-	color: purple;
+	background-color: #2c99a4;
+	color: white;
 }
 
 .table-responsive{	
 	min-width: 500px;
 }
 a.btn:hover{
-	background-color: purple;
-	color: white;
+	background-color: white;
+	color: #2c99a4;
+	border: 1px #2c99a4 solid;
 }
 .tab{
 	min-width: 200px;
@@ -368,4 +369,27 @@ hr.vie{
 }
 .bg-eth-lite{
 	background-color: #368c90 !important;
+}
+.hd-box{
+	font-size: 20px;
+	font-weight: normal;
+}
+.info-box-number{
+	/*text-overflow: ellipsis;*/
+	overflow: hidden;
+}
+.btn-enn{
+	background-color: #2c99a4 !important;
+	color: white !important;
+}
+.btn-enn:hover, .btn-enn:focus, .btn-enn:active{
+	color: #2c99a4 !important;
+	background-color: white !important;
+	border: 1px #2c99a4 solid !important;
+}
+.start-input{
+	margin-right: 10px;
+}
+.control-label.add{
+	text-align: left !important;
 }
